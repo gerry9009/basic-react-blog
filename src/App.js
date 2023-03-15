@@ -1,9 +1,14 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Basic React Blog</h1>
+      <Navbar />
+      <div className="content">
+        <Home />
+      </div>
     </div>
   );
 };
