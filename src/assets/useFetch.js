@@ -14,7 +14,9 @@ const useFetch = (url) => {
      * /blogs           post ->         add a new blog
      * /blogs/{id}      delete ->       Delete a blog
      */
-    fetch(url)
+    const abortCont = new AbortController();
+
+    fetch(url, { signal: abortCont.signal })
       .then((resp) => {
         if (!resp.ok) {
           throw Error("could not fetch the data for that resource");
@@ -30,6 +32,8 @@ const useFetch = (url) => {
         setIsPending(false);
         setError(err.message);
       });
+
+    return () => abortCont.abort();
   }, [url]);
 
   return { data, isPending, error };

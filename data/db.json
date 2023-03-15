@@ -1,10 +1,22 @@
 {
   "blogs": [
     {
-      "title": "Zip",
+      "title": "My very first blog",
+      "body": "lorem ipsum lofre lorem ipsum lofre lorem ipsum lofre lorem ipsum lofre lorem ipsum lofre",
+      "author": "Gergő",
+      "id": 1
+    },
+    {
+      "title": "Xyyy",
+      "body": "lorem ipsum...",
+      "author": "Nem Gergő",
+      "id": 2
+    },
+    {
+      "title": "sdadsasdad",
       "body": "lorem ipsum...",
       "author": "Gergő",
-      "id": 12
+      "id": 3
     }
   ]
 }
