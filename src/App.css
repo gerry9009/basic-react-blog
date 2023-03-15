@@ -1,5 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: rgb(72, 72, 72);
+  font-family: "Sono", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem 5rem;
+}
+
+.navbar .links {
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 20%;
+  min-width: 200px;
+}
+
+.navbar a {
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.navbar a:first-child:hover {
+  color: rgb(40, 150, 90);
+}
+
+.navbar a:first-child:active {
+  transform: scale(0.9);
+}
+
+.navbar a:last-child {
+  background: rgb(40, 150, 90);
+  color: rgb(255, 255, 255);
+}
+
+.navbar a:last-child:hover {
+  background-color: rgb(37, 172, 98);
+}
+
+.navbar a:last-child:active {
+  transform: scale(0.95);
+}
+
+.content {
+  margin: auto;
+  width: 70%;
+  padding: 1rem;
+}
+
+.blog-preview {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.blog-preview h2 {
+  color: rgb(40, 150, 90);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
