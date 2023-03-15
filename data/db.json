@@ -1,0 +1,10 @@
+{
+  "blogs": [
+    {
+      "title": "Zip",
+      "body": "lorem ipsum...",
+      "author": "Gergő",
+      "id": 12
+    }
+  ]
+}
