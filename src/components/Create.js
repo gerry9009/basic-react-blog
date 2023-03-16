@@ -1,9 +1,13 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
   const [author, setAuthor] = useState("Gergő");
+  const [isPending, setIsPending] = useState(false);
+
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,7 +17,18 @@ const Create = () => {
       body,
       author,
     };
-    console.log(blog);
+
+    setIsPending(true);
+
+    fetch("http://localhost:8000/blogs", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(blog),
+    }).then(() => {
+      setIsPending(false);
+
+      navigate("/");
+    });
   };
 
   return (
@@ -42,7 +57,8 @@ const Create = () => {
           <option value="Brigi">Brigi</option>
           <option value="Vince">Vince</option>
         </select>
-        <input type="submit" value="Add Blog" />
+        {!isPending && <input type="submit" value="Add Blog" />}
+        {isPending && <input type="submit" value="Adding blog..." disabled />}
       </form>
     </div>
   );

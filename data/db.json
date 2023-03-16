@@ -1,22 +1,34 @@
 {
   "blogs": [
     {
-      "title": "My very first blog",
-      "body": "lorem ipsum lofre lorem ipsum lofre lorem ipsum lofre lorem ipsum lofre lorem ipsum lofre",
+      "title": "Gergő",
+      "body": "xxxx",
       "author": "Gergő",
-      "id": 1
+      "id": 6
     },
     {
-      "title": "Xyyy",
-      "body": "lorem ipsum...",
-      "author": "Nem Gergő",
-      "id": 2
+      "title": "sadasddsa",
+      "body": "sadsad",
+      "author": "Gergő",
+      "id": 9
     },
     {
-      "title": "sdadsasdad",
-      "body": "lorem ipsum...",
+      "title": "New blog",
+      "body": "Bla bla bla",
       "author": "Gergő",
-      "id": 3
+      "id": 10
+    },
+    {
+      "title": "újjj",
+      "body": "sadads",
+      "author": "Gergő",
+      "id": 11
+    },
+    {
+      "title": "xxxxxxx",
+      "body": "Méééééééég",
+      "author": "Brigi",
+      "id": 12
     }
   ]
 }

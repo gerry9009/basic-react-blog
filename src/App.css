@@ -95,6 +95,24 @@
   margin-top: 2rem;
 }
 
+.blog-details button {
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: rgb(150, 55, 40);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.blog-details button:hover {
+  background-color: rgb(172, 55, 37);
+}
+
+.blog-details button:active {
+  transform: scale(0.95);
+}
+
 .create h2 {
   color: rgb(40, 150, 90);
   font-size: 2rem;
